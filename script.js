@@ -103,7 +103,10 @@ const searchByName = async () => {
       const foodImg = document.createElement("img");
       const foodName = document.createElement("h1");
       const foodPrice = document.createElement("p");
+      const cardButton = document.createElement("button");
 
+      cardButton.textContent = "🛒 Сагслах";
+      cardButton.className = "w-full ";
       foodCard.className = "p=[12px] rounded-[12px] wid-fit bg-white";
       foodImg.src = food.image;
       foodImg.className = "w-full h-[90px] rounded-[8px] ";
@@ -117,6 +120,7 @@ const searchByName = async () => {
       foodInfo.appendChild(foodName);
       foodInfo.appendChild(foodPrice);
       foodCard.appendChild(foodImg);
+      foodCard.appendChild(cardButton);
       foodCard.appendChild(foodInfo);
       foodContainer.appendChild(foodCard);
     });
